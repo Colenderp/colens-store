@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Colen's Store</title>
+    </head>
+    <body>
+
+        <!-- Header section -->
+
+        <header>    
+            <h1>Colen's Store</h1> 
+            <nav>
+                <ul>
+                    <li><a href= "index.html">home</a></li>
+                    <li><a href="">shop</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="search...">
+        </header>
+
+        <!-- Side bar section -->
+
+        <aside>
+            <h2>Shop by:</h2>
+            <section>
+            <h3>Category</h3>
+                <hr>
+                    <ul>
+                        <li>pins</li>
+                        <li>prints</li>
+                        <li>charms</li>
+                        <li>miscellaneous</li>
+                    </ul>
+            </section>
+            <section>
+            <h3>Price<span>($)</span></h3>
+                <hr>
+                    <ul>
+                        <li>1 - 9</li>
+                        <li>10 - 19</li>
+                        <li>20 - 29</li>
+                    </ul>
+            </section>
+        </aside>
+       
+        <!-- Main Section -->
+
+        <main>
+            <h2>Contact Us:</h2>
+            
+            <!-- Contact form -->
+
+            <form>
+                <div>
+                    <label for="name">Name:</label> <input type="text" placeholder="Enter your name uwu" id="name" name="name">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label> <input type="email" placeholder="Enter your email owo" id="email" name="email">
+                </div>
+                
+                <div>
+                    <label for="message">Message:</label><textarea cols="30" rows="5" id="message" name="message"></textarea>
+                </div>
+                
+                <!-- How to make a droplist of options + group them together
+                    
+                    <div>
+                    
+                    <label for="subject">Subject:</label>
+                    <select id="subject">
+                        <optgroup label="Product Issues">
+                            <option value="returns">Returns</option>
+                            <option value="faulty_item">Faulty Items</option>
+                        </optgroup>
+                        
+                        <optgroup label="Delivery">
+                            <option value="delivery">Delivery Info</option>
+                            <option value="order_tracking">Tracking my order</option>
+                        </optgroup>
+                        
+                        <optgroup label="Other">
+                            <option value="advice">Advice</option>
+                            <option value="others">Others</option>
+                        </optgroup>
+                        
+                    </select>
+
+                </div> -->
+
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" list="subjects" id="subject" placeholder="Enter your subject OWO">
+                    <datalist id="subjects">
+                        <option value="returns"></option>
+                        <option value="faulty item"></option>
+                        <option value="delivery"></option>
+                        <option value="order tracking"></option>
+                        <option value="advice"></option>
+                        <option value="other"></option>
+                    </datalist>
+                </div>
+
+                <!-- Subscription Method -->
+
+                <div>
+                    <p>Subscribe to future offers by:</p>
+                    <label for="newsletterSub">Newsletter</label>
+                    <input type="checkbox" id="newsletterSub" name="subscribe" value="newsletter">
+
+                    <label for="emailSub">Email</label>
+                    <input type="checkbox" id="emailSub" name="subscribe" value="email">
+
+                    <label for="postSub">Post</label>
+                    <input type="checkbox" id="postSub" name="subscribe" value="post">
+                </div>
+
+                <!-- Response Method -->
+
+                <div>
+                    <p>How would you like us to respond?</p>
+                    
+                    <label for="phoneResponse">Phone</label>
+                    <input type="radio" id="phoneResponse" name="Response" value="phone">
+
+                    <label for="emailResponse">Email</label>
+                    <input type="radio" id="emailResponse" name="Response" value="email">
+                </div>
+
+                <!-- Submit button -->
+
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                    <!-- <button type="submit">Submit teehee</button> -->
+                </div>
+
+            </form>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <!-- only displayed when device does not support iframes or on screen reader devices-->
+                <p>Your browser does not support iFrames</p>
+            </iframe>
+
+        </main>
+
+       <!-- Footer section -->
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href= "index.html">home</a></li>
+                    <li><a href="">shop</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+</html>
